@@ -2,8 +2,8 @@
 
 ## APIs
 
-* [Browser player API](player.md) 
-* [Manager API](README_EXTERNAL_API.md)
+* [Browser player API](player/player.md) 
+* [Manager API](manager/api.md)
 
 ## Integration Examples
 

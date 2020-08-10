@@ -42,7 +42,7 @@ Download the Following Postman Collection:
 Open the collection and paste your token in the Authorization Tab - Type Bearer Token as seen below. Then Replace the necessary parameters for the specific endpoint as seen below.
 
 ##### Token Example 
-<img src="./read_me_imgs/token.jpg">
+<img src="./imgs/token.jpg">
 
 #### Domain: [https://manager.c-hear.com](https://manager.c-hear.com)
 
@@ -59,16 +59,16 @@ Open the collection and paste your token in the Authorization Tab - Type Bearer 
 | POST   | `/api/access/external/block_file/:uuid` | Remove the CHIF file's Block by providing the CHIF file uuid as a http parameter and a body with two key pairs, code and reason, these are both string values self determined by the user. The uuid can be found under the manager library page - details tab | json body: ```{code: string, reason: string}``` |
 
 ##### Encoding Example (`/api/access/external/encoder`)
-<img src="./read_me_imgs/Encoding.jpg">
+<img src="./imgs/Encoding.jpg">
 
 ##### Metadata2 Example (`/api/access/external/metadata_2`)
-<img src="./read_me_imgs/metadata2.jpg">
+<img src="./imgs/metadata2.jpg">
 
 ##### Block File Example (`/api/access/external/block_file/:uuid`)
-<img src="./read_me_imgs/block.jpg">
+<img src="./imgs/block.jpg">
 
 ##### File Events Example (`/api/access/external/file_events/:uuid/:name`)
-<img src="./read_me_imgs/events.jpg">
+<img src="./imgs/events.jpg">
 
 ##### File Queue Status Example (`/api/access/external/get_files/:job_ids`)
-<img src="./read_me_imgs/queue.jpg">
+<img src="./imgs/queue.jpg">
