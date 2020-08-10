@@ -1,14 +1,13 @@
 # C-Hear Docs Hub
 
-## APIs
-
-* [Browser player API](player/readme.md) 
-* [Manager API](manager/readme.md)
-
 ## FAQ's
 
 * [FAQ's](faq/readme.md)
 
+## APIs
+
+* [Browser player API](player/readme.md) 
+* [Manager API](manager/readme.md)
 
 ## Integration Examples
 
