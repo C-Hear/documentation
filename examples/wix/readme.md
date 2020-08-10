@@ -20,15 +20,15 @@ custom scripts iframe example: https://www.youtube.com/watch?v=pG-RnEE7nUw
 
 From the site editor follow the path / ADD / More / HTML iframe to add an iframe.
 
-![wix add iframe](wix1.jpg)
+![wix add iframe](imgs/wix1.jpg)
 
 Place the iframe in the site.
 
-![wix place iframe](wix2.jpg)
+![wix place iframe](imgs/wix2.jpg)
 
 Add the CHIF via the following script.
 
-![wix add script](wix3.jpg)
+![wix add script](imgs/wix3.jpg)
 
 ```html
 <allow script>

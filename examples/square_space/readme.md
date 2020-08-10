@@ -10,15 +10,15 @@ https://support.squarespace.com/hc/en-us/articles/205815908
 
 Create a site and enter the editor:
 
-![add code](sq1.png)
+![add code](imgs/sq1.png)
 
 Once your in the editor:
 
-![add code](sq2.png)
+![add code](imgs/sq2.png)
 
 Navigate to settings/advanced/code injection:
 
-![add code](sq3.png)
+![add code](imgs/sq3.png)
 
 place the script below inside the header.
 
@@ -40,11 +40,11 @@ Save the changes.
 
 Click Edit to edit the page and click the add button:
 
-![add code](sq4.png)
+![add code](imgs/sq4.png)
 
 Add a code block to the page:
 
-![add code](sq5.png)
+![add code](imgs/sq5.png)
 
 Place the chear tag inside the body as html:
 
@@ -52,7 +52,7 @@ Place the chear tag inside the body as html:
 <chear src="CHIF URL" /></div>
 ```
 
-![add code](sq6.png)
+![add code](imgs/sq6.png)
 
 Apply and save the file.
 

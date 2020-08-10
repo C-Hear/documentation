@@ -10,7 +10,7 @@ https://www.godaddy.com/help/add-html-or-custom-code-to-my-site-27252
 
 Locate the Add HTML inside the builder and select a location for the chif and add the following script:
 
-![add code](godaddy1.jpg)
+![add code](imgs/godaddy1.jpg)
 
 ```html
 <script type="text/javascript" src="https://storage.cloud.google.com/chif-player/chifPlayer-[version].js"></script>

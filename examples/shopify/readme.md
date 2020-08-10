@@ -20,11 +20,11 @@ add on (js) to integrated designer (not necessary): https://www.youtube.com/watc
 
 Locate the theme’s section of the online store.
 
-![shopify themes](shop1.jpg)
+![shopify themes](imgs/shop1.jpg)
 
 Select customize.
 
-![shopify customize](shop2.jpg)
+![shopify customize](imgs/shop2.jpg)
 
 Select add section.
 
@@ -32,7 +32,7 @@ Select custom content and add.
 
 Remove placeholder content and header text.
 
-![shopify iframe](shop3.jpg)
+![shopify iframe](imgs/shop3.jpg)
 
 Select add content => custom html in the text area add the player script and styling:
 

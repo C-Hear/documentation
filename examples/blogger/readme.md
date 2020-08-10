@@ -6,7 +6,7 @@ This will help you start embedding CHIF files into a Blogger site.
 
 Naviage to theme and select the triple dot button and select edit html:
 
-![add code](blog1.png)
+![add code](imgs/blog1.png)
 
 place the script below inside the header.
 
@@ -14,7 +14,7 @@ place the script below inside the header.
 <script type="text/javascript" src="https://storage.cloud.google.com/chif-player/chifPlayer-[version].js"></script>
 ```
 
-![add code](blog2.png)
+![add code](imgs/blog2.png)
 
 place script after the body tag:
 
@@ -24,17 +24,17 @@ place script after the body tag:
 </script>
 ```
 
-![add code](blog3.png)
+![add code](imgs/blog3.png)
 
 Save the file.
 
 Enter the layout page and select add a gadget:
 
-![add code](blog4.png)
+![add code](imgs/blog4.png)
 
 Select the HTML/Javascript gadget:
 
-![add code](blog5.png)
+![add code](imgs/blog5.png)
 
 Place the following div tag:
 
@@ -42,11 +42,11 @@ Place the following div tag:
 <div class="chif_file" src="CHIF URL"></div>
 ```
 
-![add code](blog6.png)
+![add code](imgs/blog6.png)
 
 Select View your blog:
 
-![add code](blog7.png)
+![add code](imgs/blog7.png)
 
 In the `<script>` tag above, replace `[version]` with the version number of the player in use.
 

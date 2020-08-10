@@ -14,15 +14,15 @@ In the left vertical menu look for the Plugins menu item with a picture of a plu
 
 Hover over Plugins until a dropdown menu shows "Installed Plugins" and then click that.
 
-![wordpress installed plugins](wordpress_installed_plugins.jpg)
+![wordpress installed plugins](imgs/wordpress_installed_plugins.jpg)
 
 Make sure you have the plugin titled "Insert Headers and Footers" which will look like this:
 
-![wordpress headers and footers](wordpress_plugin_headers_footers.jpg)
+![wordpress headers and footers](imgs/wordpress_plugin_headers_footers.jpg)
 
 If you don't have this, go to the top of this screen and click the "Add New" button and add this plugin before proceeding.
 
-![wordpress headers and footers](wordpress_insert_header_footer.jpg)
+![wordpress headers and footers](imgs/wordpress_insert_header_footer.jpg)
 
 Once you have this plugin installed, look again in the left vertical menu for the settings menu item.
 
@@ -30,7 +30,7 @@ Hover over settings and now you should see a dropdown list appear that includes 
 
 Once you open this plugin, this is what it should look like in WordPress:
 
-![](wordpress_insert_header_footer_ui.jpg)
+![](imgs/wordpress_insert_header_footer_ui.jpg)
 
 Inside of the "Scripts in Header" section, paste the following two lines of code:
 
@@ -58,7 +58,7 @@ In the left vertical menu hover over Appearance with the paintbrush icon.
 
 From there a drop down menu will appear. Click theme editor.
 
-![](wordpress_theme_editor.jpg)
+![](imgs/wordpress_theme_editor.jpg)
 
 Add a functions.php file including the following code:
 
@@ -74,7 +74,7 @@ Add a functions.php file including the following code:
 
 This is what it should look like in WordPress:
 
-![](wordpress_preview_functions_php.jpg)
+![](imgs/wordpress_preview_functions_php.jpg)
 
 After that simply click "Update File" in blue at the bottom left of this screen.
 
@@ -84,11 +84,11 @@ Go to the "Media" section in the left vertical menu with the camera and music no
 
 Click "Add New"
 
-![](wordpress_add_new_media.jpg)
+![](imgs/wordpress_add_new_media.jpg)
 
 An option to drag and drop a file or press "Select Files" to view them in the hard drive folder will appear.
 
-![](wordpress_upload_media.jpg)
+![](imgs/wordpress_upload_media.jpg)
 
 Because CHIF files are so new they are not yet recognized by WordPress's uploader. To get around this simply use the drag and drop method. Do not press the "Select Files" button as it will not recognize CHIF files as options to select.
 
@@ -98,13 +98,13 @@ For each CHIF file you have to add a code block with the code for the CHIF file 
 
 To do this go to the page you'd like to add the CHIF file and add a Code Block element. As an example, here is our setup similar to the HTML demo where we have three CHIFs (you'll also notice the paragraph blocks beneath the images):
 
-![](wordpress_insert_code_block.jpg)
+![](imgs/wordpress_insert_code_block.jpg)
 
 Each of these code blocks will create a CHIF file. In order to do that go to the Media Library and open the CHIF file you'd like to display.
 
 Once you have opened the CHIF file in the Media Library you will see a screen with a panel to the right similar to this:
 
-![](wordpress_media_properties.jpg)
+![](imgs/wordpress_media_properties.jpg)
 
 Notice the "copy link" area; (copy all the text in the link).
 
