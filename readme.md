@@ -5,6 +5,11 @@
 * [Browser player API](player/readme.md) 
 * [Manager API](manager/readme.md)
 
+## FAQ's
+
+* [FAQ's](faq/readme.md)
+
+
 ## Integration Examples
 
 * [HTML](examples/html/readme.md)
@@ -14,4 +19,9 @@
 * [GoDaddy](examples/godaddy/readme.md)
 * [Blogger](examples/blogger/readme.md)
 * [Square Space](examples/square_space/readme.md)
+
+## Tutorials
+
+* [Tutorials](https://github.com/C-Hear/chif-tutorials)
+
 

@@ -23,7 +23,7 @@ The Manager External API utilizes Bearer tokens for user Authorization processin
 
 #### Bearer Token Management
 
-After Creating an account with the [CHIF MANAGER](https://manager.c-hear.com), the token management system can be accessed via the [API](https://manager.c-hear.com/external_api) Page. Here you the user has access to your tokens, you can generate as many as required and delete them, these tokens are associated with the organization that they are created in.
+After Creating an account with the [CHIF MANAGER](https://manager.c-hear.com), the token management system can be accessed via the [API](https://manager.c-hear.com/settings/api) Page. Here you the user has access to your tokens, you can generate as many as required and delete them, these tokens are associated with the organization that they are created in.
 
 During the creation process the user will provide token descriptor for personal identification.
 
