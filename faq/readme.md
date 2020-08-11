@@ -320,4 +320,3 @@ Yes, we do have this option and you can find this selected feature at/inside \**
 
 Yes. Today, the CHIF is keyboard accessible and adaptable to screen readers like JAWS.
 
-<video controls width="250"><source src="loom1.mp4" type="video/mp4"></video>
