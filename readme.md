@@ -23,4 +23,8 @@
 
 * [Tutorials](https://github.com/C-Hear/chif-tutorials)
 
+## Legal
+
+* [Terms of Service](terms_of_service/readme.md)
+
 
