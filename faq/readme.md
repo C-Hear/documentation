@@ -296,11 +296,11 @@ Great! Please feel free to contact us by emailing Dylan Rafaty at Accessibility@
 
 CHIF is a unique file that will have the ability to reach the widest audience possible. Individuals who are deaf and/or hard of hearing will have the opportunity to read the alt-text of the image or video contained within CHIF. Blind and/or visually impaired users will have the option to either listen to an audio recording and/or have a screen reader (or JAWS) interpret the alt-text of the CHIF file.
 
-#### Are there any audio settings for me to play the CHIF louder and/or softer? 
+#### Are there any audio settings for me to play the CHIF louder and/or softer?
 
 No. Today, CHIF plays at a current audio range at **\_\_\_**.
 
-#### Will I be able to decrease and/or increase the font size of the alt-text within CHIF? 
+#### Will I be able to decrease and/or increase the font size of the alt-text within CHIF?
 
 No. Currently, the standard font size in CHIF is **\_\_\_**.
 
@@ -312,10 +312,12 @@ Alt tags are short for alternative tags, alt attributes, and alt descriptions. I
 
 No. Currently, we are exploring options to work with accessible and appropriate 3rd party partners to develop this option for our users.
 
-#### I'm sensitive to bright white screens. Do you have the feature for users to select the dark mode option inside the C-Hear CHIF Manager? 
+#### I'm sensitive to bright white screens. Do you have the feature for users to select the dark mode option inside the C-Hear CHIF Manager?
 
-Yes, we do have this option and you can find this selected feature at/inside ****\_\_\_****.
+Yes, we do have this option and you can find this selected feature at/inside \***\*\_\_\_\*\***.
 
-#### Is the C-Hear Technology keyboard accessible and other assistive technologies like a JAWS screen reader? 
+#### Is the C-Hear Technology keyboard accessible and other assistive technologies like a JAWS screen reader?
 
 Yes. Today, the CHIF is keyboard accessible and adaptable to screen readers like JAWS.
+
+<video controls width="250"><source src="loom1.mp4" type="video/mp4"></video>
