@@ -16,4 +16,6 @@
 * [Square Space](examples/square_space/readme.md)
 ## Tutorials
 * [Tutorials](https://github.com/C-Hear/chif-tutorials)
-
+## Player Versions
+* [Browser player API](player/readme.md) 
+* [General Implementation](player/playerimplementation)

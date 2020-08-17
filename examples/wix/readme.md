@@ -32,21 +32,28 @@ Add the CHIF via the following script.
 
 ```html
 <allow script>
-<script type='text/javascript' src="https://storage.cloud.google.com/chif-player/chifPlayer-[version].js"></script>
-<style>
-    .chif-container {
-    margin: 0 auto;
-    width: 650px;
-    }
-</style>
-<chear src="CHIF URL"></chear>
-<script> chifPlayer.streamFiles() </script>
+	<script type="text/javascript" src="https://storage.cloud.google.com/chif-player/chifPlayer-[version].js"></script>
+	<style>
+		.chif-container {
+			margin: 0 auto;
+			width: 650px;
+		}
+	</style>
+	<chear src="[chif url]"></chear>
+	<script>
+		(async function () {
+			const chifResults = await chifPlayer.streamFiles();
+		})();
+	</script></allow
+>
 ```
-```<allow script>``` allows the javascript player to run in the iframe.
 
-```<style>``` provides the ability to modify the player styling via css.
+`<allow script>` allows the javascript player to run in the iframe.
 
+`<style>` provides the ability to modify the player styling via css.
 
 In the `<script>` tag above, replace `[version]` with the version number of the player in use.
 
-In the `<chear>` tag above, replace `src="CHIF URL"` with the path to your CHIF File.
+* [Player Version Link/General Implementation](../../player/playerimplementation.md)
+
+In the `<chear>` tag above, replace `src="[chif url]"` with the path to your CHIF File.

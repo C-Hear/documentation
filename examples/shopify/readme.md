@@ -39,10 +39,10 @@ Select add content => custom html in the text area add the player script and sty
 ```html
 <script type="text/javascript" src="https://storage.cloud.google.com/chif-player/chifPlayer-[version].js"></script>
 <style>
-.chif-container {
-    margin: 0 auto;
-    width: 650px;
-}
+	.chif-container {
+		margin: 0 auto;
+		width: 650px;
+	}
 </style>
 ```
 
@@ -53,7 +53,7 @@ Add CHIF:
 Follow the same instructions above and replace the custom html with:
 
 ```html
-<chear src="CHIF URL"></chear>
+<chear src="[chif url]"></chear>
 ```
 
 Save the site and move the custom content to the location in which you want it to be rendered.
@@ -63,13 +63,19 @@ Add player script:
 Follow the same instructions above and replace the custom html with:
 
 ```html
-<script> chifPlayer.streamFiles() </script>
+<script>
+	(async function () {
+		const chifResults = await chifPlayer.streamFiles();
+	})();
+</script>
 ```
 
 Save the site and move the custom content to the bottom of the page, make sure the script is below the chif.
 
-```<style>``` provides the ability to modify the player styling via css.
+`<style>` provides the ability to modify the player styling via css.
 
 In the `<script>` tag above, replace `[version]` with the version number of the player in use.
 
-In the `<chear>` tag above, replace `src="CHIF URL"` with the path to your CHIF File.
+* [Player Version Link/General Implementation](../../player/playerimplementation.md)
+
+In the `<chear>` tag above, replace `src="[chif url]"` with the path to your CHIF File.

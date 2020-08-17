@@ -39,7 +39,7 @@ Select the HTML/Javascript gadget:
 Place the following div tag:
 
 ```html
-<div class="chif_file" src="CHIF URL"></div>
+<div class="chif_file" src="[chif url]"></div>
 ```
 
 ![add code](imgs/blog6.png)
@@ -50,4 +50,6 @@ Select View your blog:
 
 In the `<script>` tag above, replace `[version]` with the version number of the player in use.
 
-In the `<chear>` tag above, replace `src="CHIF URL"` with the path to your CHIF File.
+* [Player Version Link/General Implementation](../../player/playerimplementation.md)
+
+In the `<chear>` tag above, replace `src="[chif url]"` with the path to your CHIF File.

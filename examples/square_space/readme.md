@@ -49,7 +49,7 @@ Add a code block to the page:
 Place the chear tag inside the body as html:
 
 ```html
-<chear src="CHIF URL" /></div>
+<chear src="[chif url]" /></div>
 ```
 
 ![add code](imgs/sq6.png)
@@ -58,4 +58,6 @@ Apply and save the file.
 
 In the `<script>` tag above, replace `[version]` with the version number of the player in use.
 
-In the `<chear>` tag above, replace `src="CHIF URL"` with the path to your CHIF File.
+* [Player Version Link/General Implementation](../../player/playerimplementation.md)
+
+In the `<chear>` tag above, replace `src="[chif url]"` with the path to your CHIF File.

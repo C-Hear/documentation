@@ -25,10 +25,10 @@ In its simplest form, the player can be used by calling the exported function st
 ```html
 <html>
   <head>
-    <script src="https://storage.cloud.google.com/chif-player/chifPlayer-3.0.0.js"></script>
+    <script src="https://storage.cloud.google.com/chif-player/chifPlayer-[version].js"></script>
   </head>
   <body>
-    <chear src="example1.chif" />
+    <chear src="[chif url]" />
     <script>
       (async function() {
         const chifResults = await chifPlayer.streamFiles()
@@ -37,6 +37,13 @@ In its simplest form, the player can be used by calling the exported function st
   </body>
 </html>
 ```
+
+In the `<script>` tag above, replace `[version]` with the version number of the player in use.
+
+* [Player Version Link/General Implementation](/player/playerimplementation.md)
+
+In the `<chear>` tag above, replace `src="[chif url]"` with the path to your CHIF File.
+
 
 ## Components
 

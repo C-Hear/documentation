@@ -20,7 +20,7 @@ Locate the Add HTML inside the builder and select a location for the chif and ad
 		width: 650px;
 	}
 </style>
-<chear src="CHIF URL"></chear>
+<chear src="[chif url]"></chear>
 <script>
 	chifPlayer.streamFiles();
 </script>
@@ -28,6 +28,8 @@ Locate the Add HTML inside the builder and select a location for the chif and ad
 
 ```<style>``` allows css to modify the player html to fit the iframe
 
-In the `<script>` tag above, replace `[version]` with the version number of the player in use.
+In the `<script>` tag above, replace `[version]` with the version number of the player in use. 
 
-In the `<chear>` tag above, replace `src="CHIF URL"` with the path to your CHIF File.
+* [Player Version Link/General Implementation](../../player/playerimplementation.md)
+
+In the `<chear>` tag above, replace `src="[chif url]"` with the path to your CHIF File.

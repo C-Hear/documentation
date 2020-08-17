@@ -40,11 +40,15 @@ Inside of the "Scripts in Header" section, paste the following two lines of code
 
 In the `<script>` tag above, replace `[version]` with the version number of the player in use.
 
+* [Player Version Link/General Implementation](../../player/playerimplementation.md)
+
 Inside of the "Scripts in Footer" section, paste the following line of code:
 
 ```html
 <script>
-	window.chifPlayer.streamFiles();
+	(async function () {
+		const chifResults = await chifPlayer.streamFiles();
+	})();
 </script>
 ```
 
@@ -113,10 +117,10 @@ Now it's time to paste this where we want our CHIF file in the code block. Navig
 All you have to do now is paste the following code into your div:
 
 ```html
-<chear src="CHIF URL"></chear>
+<chear src="[chif url]"></chear>
 ```
 
-In the `<chear>` tag above, replace `src="CHIF URL"` with the path to your CHIF File.
+In the `<chear>` tag above, replace `src="[chif url]"` with the path to your CHIF File.
 
 Be sure to use the text you copied from the CHIF file in the media section as your source (everything inside the quotation marks) where our example has "chif_file_source_path".
 That's it!
