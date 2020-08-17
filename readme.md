@@ -8,7 +8,7 @@
 * [Manager API](manager/readme.md)
 ## Player
 * [Browser player API](player/readme.md) 
-* [General Implementation](player/playerimplementation)
+* [General Implementation](player/playerimplementation.md)
 ## Integration Examples
 * [HTML](examples/html/readme.md)
 * [WordPress](examples/wordpress/readme.md)
