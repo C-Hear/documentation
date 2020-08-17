@@ -6,6 +6,9 @@
 ## APIs
 * [Browser player API](player/readme.md) 
 * [Manager API](manager/readme.md)
+## Player
+* [Browser player API](player/readme.md) 
+* [General Implementation](player/playerimplementation)
 ## Integration Examples
 * [HTML](examples/html/readme.md)
 * [WordPress](examples/wordpress/readme.md)
@@ -16,6 +19,4 @@
 * [Square Space](examples/square_space/readme.md)
 ## Tutorials
 * [Tutorials](https://github.com/C-Hear/chif-tutorials)
-## Player
-* [Browser player API](player/readme.md) 
-* [General Implementation](player/playerimplementation)
+
