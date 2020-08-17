@@ -4,4 +4,4 @@
 2. Select a file and locate the `current version` of the player.
 ![manager version location](imgs/manager_version.jpg)
 3. Copy the `version number` or `download` the player file.
-4. In order to use the player either use the provided `public url` with the current version or `Download` the file and reference the player file.
+4. In order to use the player either use the provided `public url` with the current version or `download` the file and reference the player file.
