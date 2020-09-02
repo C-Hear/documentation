@@ -50,7 +50,7 @@ Open the collection and paste your token in the Authorization Tab - Type Bearer 
 
 #### Domain: [https://manager.c-hear.com](https://manager.c-hear.com)
 
-| Method | Endpoint                       | Description           | Body              |
+<!-- | Method | Endpoint                       | Description           | Body              |
 | ------ | ------------------------------ | --------------------- | ----------------- |
 | POST   | `/api/access/external/encoder` | Creating a CHIF FILE. The response will be a queue job_id which can be used to receive job queue status via the GET `/api/access/external/get_files/:job_ids` Endpoint.  | form-data: ```{    imageFileName: 'Local Image File', audioFileName: 'Local Audio File', textFileName: 'Local Text File', uploadedCHIFFileNAME: 'File Name',tags: 'Stringified JSON Array',author: 'string',valid_domains: 'Stringified JSON Array',alt: 'string',user: 'Stringified JSON Object (User Defined)',valid_range_start: 'Date Formate (YYYY-MM-DDTHH:MM:SSZ)',valid_range_end: 'Date Formate (YYYY-MM-DDTHH:MM:SSZ)', skipPreview: 'false' OR 'true'   }```  |
 | GET   | `/api/access/external/get_files/:task_ids` | Receive the CHIF file's task queue status by placing all of the task queue id's seperated by comma's in the task_ids place, if the task queue is completed it will contain a "queue_status" key with the value "completed" and a "response.link" with the value being the CHIF url source. |                   |
@@ -60,7 +60,7 @@ Open the collection and paste your token in the Authorization Tab - Type Bearer 
 | GET   | `/api/access/external/file_events/:uuid/:chif_name` | Receive the CHIF file's event content in csv format by providing the CHIF file uuid and name `file.chif` as a http parameters. The uuid can be found under the manager library page - details tab |                   |
 | GET   | `/api/access/external/exception_file/:uuid` | Receive the CHIF file's Block description by providing the CHIF file uuid as a http parameter. The uuid can be found under the manager library page - details tab |                   |
 | DELETE   | `/api/access/external/unblock_file/:uuid` | Remove the CHIF file's Block by providing the CHIF file uuid as a http parameter. The uuid can be found under the manager library page - details tab |                   |
-| POST   | `/api/access/external/block_file/:uuid` | Remove the CHIF file's Block by providing the CHIF file uuid as a http parameter and a body with two key pairs, code and reason, these are both string values self determined by the user. The uuid can be found under the manager library page - details tab | json body: ```{code: string, reason: string}``` |
+| POST   | `/api/access/external/block_file/:uuid` | Remove the CHIF file's Block by providing the CHIF file uuid as a http parameter and a body with two key pairs, code and reason, these are both string values self determined by the user. The uuid can be found under the manager library page - details tab | json body: ```{code: string, reason: string}``` | -->
 
 ## API Requests
 
@@ -91,7 +91,7 @@ Append the following entries as **Form Data**:
     valid_range_start: 'Date Formate (YYYY-MM-DDTHH:MM:SSZ)',
     valid_range_end: 'Date Formate (YYYY-MM-DDTHH:MM:SSZ)'
 
-## 2. Get CHIF File Task Status
+## 2. Get CHIF File Task Status by Task ID
 
 **Method:** `GET` 
 
@@ -101,7 +101,7 @@ Append the following entries as **Form Data**:
 
 Receive the CHIF file's task queue status by placing all of the task queue id's seperated by comma's in the task_ids place, if the task queue is completed it will contain a "queue_status" key with the value "completed" and a "response.link" with the value being the CHIF url source.
 
-## 2. Get CHIF File Task Status
+## 3. Get CHIF File Tasks Status by Organization ID
 
 **Method:** `GET` 
 
@@ -111,9 +111,72 @@ Receive the CHIF file's task queue status by placing all of the task queue id's 
 
 Receive the CHIF file's task queue status by referencing the organization id, if the task queue is completed it will contain a "queue_status" key with the value "completed" and a "response.link" with the value being the CHIF url source.
 
+## 4. Get CHIF File Metadata by file name
 
+**Method:** `GET` 
 
+**Route:** `/api/access/external/metadata/:org_dir/:chif_name`
 
+**Description:** 
+
+Receive the CHIF file's metadata content by providing the CHIF file Name `file.chif` and the internal storage directory identifier in which the chif is located as http parameters. The storage directory identifier can be found under the manager library page - details tab.
+
+<!-- ## 5. Get CHIF File Metadata by file name
+
+**Method:** `GET` 
+
+**Route:** `/api/access/external/metadata_2`
+
+**Description:** 
+
+If you have a local or external chif file's you can access their metadata through this endpoint by providing the files as form-data. The response will consist of an array containing the requested metadata.  -->
+
+## 5. Get CHIF File Event Data by file name
+
+**Method:** `GET` 
+
+**Route:** `/api/access/external/file_events/:uuid/:chif_name`
+
+**Description:** 
+
+Receive the CHIF file's event content in csv format by providing the CHIF file `uuid` and name `file.chif` as http parameters. The `uuid` can be found in the metadata of the file.
+
+## 6. Get CHIF File Blocked Decription
+
+**Method:** `GET` 
+
+**Route:** `/api/access/external/exception_file/:uuid`
+
+**Description:** 
+
+Receive the CHIF file's Block description by providing the CHIF file `uuid` as a http parameter. The `uuid` can be found in the metadata of the file.
+
+## 7. Un Block CHIF File
+
+**Method:** `DELETE` 
+
+**Route:** `/api/access/external/unblock_file/:uuid`
+
+**Description:** 
+
+Remove the CHIF file's Block by providing the CHIF file `uuid` as a http parameter. The `uuid` can be found in the metadata of the file.
+
+## 8. Block CHIF File
+
+**Method:** `POST` 
+
+**Route:** `/api/access/external/block_file/:uuid`
+
+**Description:** 
+
+Block a CHIF file by providing the CHIF file `uuid` as a http parameter and a body with two key pairs, `code` and `reason`, these are both string values self determined by the user. The `uuid` can be found in the metadata of the file.
+
+**Body (JSON Body):**
+
+Append the following entries as **JSON key Value pairs**:
+
+    code: string (JSON Compatible), 
+    reason: string (JSON Compatible)
 
 ##### Encoding Example (`/api/access/external/encoder`)
 <img src="./imgs/Encoding.jpg">
