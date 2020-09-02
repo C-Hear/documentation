@@ -4,7 +4,14 @@ This is the working document for the Externally Accessible API
 
 ## Navigation
 
-- [Create A CHIF](#1.-Create-A-CHIF)
+-   [Create A CHIF](#-1.-Create-A-CHIF)
+-   [View CHIF Task Status by File](#-2.-Get-CHIF-File-Task-Status-by-Task-ID)
+-   [Get CHIF File Tasks Status by Organization ID](#-3.-Get-CHIF-File-Tasks-Status-by-Organization-ID)
+-   [Get CHIF File Metadata by file name](#-4.-Get-CHIF-File-Metadata-by-file-name)
+-   [Get CHIF File Event Data by file name](#-5.-Get-CHIF-File-Event-Data-by-file-name)
+-   [Get CHIF File Blocked Decription](#-6.-Get-CHIF-File-Blocked-Decription)
+-   [Un Block CHIF File](#-7.-Un-Block-CHIF-File)
+-   [Block CHIF File](#-8.-Block-CHIF-File)
 
 ## Getting Started
 
@@ -45,7 +52,8 @@ Download the Following Postman Collection:
 
 Open the collection and paste your token in the Authorization Tab - Type Bearer Token as seen below. Then Replace the necessary parameters for the specific endpoint as seen below.
 
-##### Token Example 
+##### Token Example
+
 <img src="./imgs/token.jpg">
 
 #### Domain: [https://manager.c-hear.com](https://manager.c-hear.com)
@@ -66,11 +74,11 @@ Open the collection and paste your token in the Authorization Tab - Type Bearer 
 
 ## 1. Create A CHIF
 
-**Method:** `POST` 
+**Method:** `POST`
 
 **Route:** `/api/access/external/encoder`
 
-**Description:** 
+**Description:**
 
 Creating a CHIF FILE. The response will be a queue job_id which can be used to receive job queue status via the GET `/api/access/external/get_files/:job_ids` Endpoint.
 
@@ -78,10 +86,10 @@ Creating a CHIF FILE. The response will be a queue job_id which can be used to r
 
 Append the following entries as **Form Data**:
 
-    imageFileName: 'Local Image File Path', 
-    audioFileName: 'Local Audio File Path', 
+    imageFileName: 'Local Image File Path',
+    audioFileName: 'Local Audio File Path',
     uploadedCHIFFileNAME: 'File Name (JSON Compatible)',
-    skipPreview: 'false' OR 'true'   
+    skipPreview: 'false' OR 'true'
     transcript: 'string value (JSON Compatible)'
     tags: 'Stringified JSON Array (JSON Compatible)',
     author: 'string (JSON Compatible)',
@@ -93,81 +101,81 @@ Append the following entries as **Form Data**:
 
 ## 2. Get CHIF File Task Status by Task ID
 
-**Method:** `GET` 
+**Method:** `GET`
 
 **Route:** `/api/access/external/get_files/:task_ids`
 
-**Description:** 
+**Description:**
 
 Receive the CHIF file's task queue status by placing all of the task queue id's seperated by comma's in the task_ids place, if the task queue is completed it will contain a "queue_status" key with the value "completed" and a "response.link" with the value being the CHIF url source.
 
 ## 3. Get CHIF File Tasks Status by Organization ID
 
-**Method:** `GET` 
+**Method:** `GET`
 
 **Route:** `/api/access/external/get_files/org_id/:org_id`
 
-**Description:** 
+**Description:**
 
 Receive the CHIF file's task queue status by referencing the organization id, if the task queue is completed it will contain a "queue_status" key with the value "completed" and a "response.link" with the value being the CHIF url source.
 
 ## 4. Get CHIF File Metadata by file name
 
-**Method:** `GET` 
+**Method:** `GET`
 
 **Route:** `/api/access/external/metadata/:org_dir/:chif_name`
 
-**Description:** 
+**Description:**
 
 Receive the CHIF file's metadata content by providing the CHIF file Name `file.chif` and the internal storage directory identifier in which the chif is located as http parameters. The storage directory identifier can be found under the manager library page - details tab.
 
 <!-- ## 5. Get CHIF File Metadata by file name
 
-**Method:** `GET` 
+**Method:** `GET`
 
 **Route:** `/api/access/external/metadata_2`
 
-**Description:** 
+**Description:**
 
 If you have a local or external chif file's you can access their metadata through this endpoint by providing the files as form-data. The response will consist of an array containing the requested metadata.  -->
 
 ## 5. Get CHIF File Event Data by file name
 
-**Method:** `GET` 
+**Method:** `GET`
 
 **Route:** `/api/access/external/file_events/:uuid/:chif_name`
 
-**Description:** 
+**Description:**
 
 Receive the CHIF file's event content in csv format by providing the CHIF file `uuid` and name `file.chif` as http parameters. The `uuid` can be found in the metadata of the file.
 
 ## 6. Get CHIF File Blocked Decription
 
-**Method:** `GET` 
+**Method:** `GET`
 
 **Route:** `/api/access/external/exception_file/:uuid`
 
-**Description:** 
+**Description:**
 
 Receive the CHIF file's Block description by providing the CHIF file `uuid` as a http parameter. The `uuid` can be found in the metadata of the file.
 
 ## 7. Un Block CHIF File
 
-**Method:** `DELETE` 
+**Method:** `DELETE`
 
 **Route:** `/api/access/external/unblock_file/:uuid`
 
-**Description:** 
+**Description:**
 
 Remove the CHIF file's Block by providing the CHIF file `uuid` as a http parameter. The `uuid` can be found in the metadata of the file.
 
 ## 8. Block CHIF File
 
-**Method:** `POST` 
+**Method:** `POST`
 
 **Route:** `/api/access/external/block_file/:uuid`
 
-**Description:** 
+**Description:**
 
 Block a CHIF file by providing the CHIF file `uuid` as a http parameter and a body with two key pairs, `code` and `reason`, these are both string values self determined by the user. The `uuid` can be found in the metadata of the file.
 
@@ -175,21 +183,25 @@ Block a CHIF file by providing the CHIF file `uuid` as a http parameter and a bo
 
 Append the following entries as **JSON key Value pairs**:
 
-    code: string (JSON Compatible), 
+    code: string (JSON Compatible),
     reason: string (JSON Compatible)
 
 ##### Encoding Example (`/api/access/external/encoder`)
+
 <img src="./imgs/Encoding.jpg">
 
 ##### Metadata2 Example (`/api/access/external/metadata_2`)
+
 <img src="./imgs/metadata2.jpg">
 
 ##### Block File Example (`/api/access/external/block_file/:uuid`)
+
 <img src="./imgs/block.jpg">
 
 ##### File Events Example (`/api/access/external/file_events/:uuid/:name`)
+
 <img src="./imgs/events.jpg">
 
 ##### File Queue Status Example (`/api/access/external/get_files/:job_ids`)
-<img src="./imgs/queue.jpg">
 
+<img src="./imgs/queue.jpg">
