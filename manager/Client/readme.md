@@ -26,7 +26,7 @@ These docs will provide an overview of the Manager Capabilities.
 | [General Organization Settings](#General-Organization-Settings)             | X     | X     | X           |
 | [Builder](#Builder)                                                         | X     | X     | X           |
 | [Library](#Library)                                                         | X     | X     | X           |
-| [Delete A CHIF](#Delete-A-CHIF)                                             | X     |       | X (creator) |
+| [Delete A CHIF](#Delete-A-CHIF)                                             | X     | X     | X (creator) |
 
 ### Create Organization
 
