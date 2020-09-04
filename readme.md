@@ -17,6 +17,6 @@
 ## Tutorials
 * [Tutorials](https://github.com/C-Hear/chif-tutorials)
 ## Manager
-* [Manager Client](manager/client/readme.md)
-* [Manager API](manager/api/readme.md)
+* [Manager Client](manager/Client/readme.md)
+* [Manager API](manager/Api/readme.md)
 
