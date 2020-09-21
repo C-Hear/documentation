@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-These docs will provide an overview of signing up for a free tier AWS account, creating a S3 bucket, bucket permissions and file storage.
+These docs will provide an overview of signing up for a free tier AWS account, creating a S3 bucket, bucket permissions, file upload, file permissions and file reference url.
 
 ## AWS Signup
 
