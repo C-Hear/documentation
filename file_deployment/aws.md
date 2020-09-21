@@ -88,11 +88,3 @@ Obtain the public url by clicking in the file name and Copy the Object URL.
 <img src="./imgs/aws-6.jpg">
 
 Now you are ready to use your CHIF. 
-
-<!-- <?xml version="1.0" encoding="UTF-8"?>
-<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-<CORSRule>
-    <AllowedOrigin>*</AllowedOrigin>
-    <AllowedMethod>GET</AllowedMethod>
-</CORSRule>
-</CORSConfiguration> -->
