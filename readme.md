@@ -6,6 +6,8 @@
 ## Player
 * [Browser Player API](player/readme.md) 
 * [General Implementation](player/playerimplementation.md)
+## Public Storage
+* [Storage Examples](file_deployment/readme.md) 
 ## Integration Examples
 * [HTML](examples/html/readme.md)
 * [WordPress](examples/wordpress/readme.md)
