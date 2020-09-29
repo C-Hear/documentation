@@ -1,0 +1,14 @@
+{
+	"name": "create-block/starter-block",
+	"title": "CHIF Uploader",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "C-Hear Wordpress Plugin for embedding CHIFs on your Wordpress site.",
+	"textdomain": "starter-block",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
