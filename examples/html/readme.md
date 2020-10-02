@@ -11,12 +11,12 @@ Following is a simple example to get started using CHIF in your web site with on
   </head>
   <body>
     <chear src="[chif url]" />
-    <script>
+  </body>
+  <script>
       (async function() {
         const chifResults = await chifPlayer.streamFiles()
       })()
-    </script>
-  </body>
+  </script>
 </html>
 ```
 
