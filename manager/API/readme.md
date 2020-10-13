@@ -188,11 +188,11 @@ Append the following entries as **JSON key Value pairs**:
 
 ##### Encoding Example (`/api/access/external/encoder`)
 
-<img src="./imgs/Encoding.jpg">
+<img src="./imgs/encode2.jpg">
 
-##### Metadata2 Example (`/api/access/external/metadata_2`)
+<!-- ##### Metadata2 Example (`/api/access/external/metadata_2`)
 
-<img src="./imgs/metadata2.jpg">
+<img src="./imgs/metadata2.jpg"> -->
 
 ##### Block File Example (`/api/access/external/block_file/:uuid`)
 
